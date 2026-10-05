@@ -1,0 +1,7 @@
+Model OCR yang disertakan (format ONNX):
+  ch_PP-OCRv4_det_infer.onnx  — deteksi teks (DB)
+  ch_PP-OCRv4_rec_infer.onnx  — pengenalan teks (SVTR/CTC, daftar karakter di metadata)
+
+Sumber: PaddleOCR (PaddlePaddle) — konversi ONNX dari proyek RapidOCR.
+Lisensi: Apache License 2.0 — https://www.apache.org/licenses/LICENSE-2.0
+Hak cipta model tetap pada pemiliknya; berkas disertakan tanpa perubahan.

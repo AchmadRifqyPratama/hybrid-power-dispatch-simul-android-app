@@ -1,0 +1,47 @@
+# -*- coding: utf-8 -*-
+# =============================================================================
+#  HPP Studio — Windows version resource (metadata penerbit di dalam .exe)
+#
+#  Berkas ini dibaca PyInstaller (via `version=` di spec) lalu ditanam ke dalam
+#  HPPStudio.exe. Hasilnya: klik-kanan .exe -> Properties -> tab "Details"
+#  menampilkan nama penerbit, produk, versi, dan hak cipta. .exe yang memiliki
+#  metadata penerbit yang jelas TERLIHAT SAH dan lebih jarang ditandai keliru
+#  (false positive) oleh antivirus/SmartScreen dibanding .exe anonim.
+#
+#  MENAIKKAN VERSI: ubah angka pada filevers=(...) & prodvers=(...) DAN string
+#  'FileVersion' / 'ProductVersion' di bawah agar konsisten. Format 4 angka:
+#  (major, minor, build, revision).
+# =============================================================================
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(0, 31, 0, 0),
+    prodvers=(0, 31, 0, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,          # VOS_NT_WINDOWS32
+    fileType=0x1,        # VFT_APP  (aplikasi)
+    subtype=0x0,
+    date=(0, 0),
+  ),
+  kids=[
+    StringFileInfo([
+      StringTable(
+        '040904B0',      # US English, Unicode (1033 / codepage 1200)
+        [
+          StringStruct('CompanyName', 'Akartha Energi Baru'),
+          StringStruct('FileDescription',
+                       'HPP Studio — Hybrid Power Plant Simulator '
+                       '(PV + BESS + Diesel + Grid)'),
+          StringStruct('FileVersion', '0.31.0.0'),
+          StringStruct('InternalName', 'HPPStudio'),
+          StringStruct('LegalCopyright',
+                       '© 2026 Akartha Energi Baru — Developed by ARP · '
+                       'Engineering, Akartha Energy'),
+          StringStruct('OriginalFilename', 'HPPStudio.exe'),
+          StringStruct('ProductName', 'HPP Studio'),
+          StringStruct('ProductVersion', '0.31.0.0'),
+        ])
+    ]),
+    VarFileInfo([VarStruct('Translation', [1033, 1200])])
+  ]
+)

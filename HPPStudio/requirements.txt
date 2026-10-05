@@ -1,0 +1,22 @@
+PySide6>=6.6
+# Catatan: peta pemilih lokasi memakai Qt WebEngine + Qt WebChannel, yang sudah
+# termasuk dalam paket lengkap "PySide6" (PySide6-Addons). Bila hanya memasang
+# "PySide6-Essentials", tombol "Pilih di Peta" nonaktif secara anggun.
+pyqtgraph>=0.13.3
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.8
+openpyxl>=3.1
+reportlab>=4.0
+python-docx>=1.1
+pyinstaller>=6.3
+# Editor arsitektur — impor gambar/PDF:
+#   pypdf     : membaca lapisan teks PDF (pengenalan komponen dari PDF draw.io/CAD)
+#   pytesseract (opsional) : OCR untuk JPG/PNG; butuh aplikasi Tesseract-OCR
+#               terpasang (https://github.com/UB-Mannheim/tesseract/wiki).
+#               Tanpa OCR, gambar tetap dapat diimpor sebagai latar untuk ditelusuri.
+pypdf>=4.0
+# pytesseract>=0.3.10
+# OCR TERBAWA untuk impor gambar/PDF CAD (teks AutoCAD/SHX tidak punya lapisan teks):
+#   model PP-OCRv4 sudah disertakan di app/ocr/models — cukup runtime ONNX berikut.
+onnxruntime>=1.16
